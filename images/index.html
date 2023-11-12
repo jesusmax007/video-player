@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Video player</title>
+    <link rel="icon" type="image/png" href="./icon.png"/>
+</head>
+<body>
+    <h1>Hola Mundo!</h1>
+    <button class="button" id="backward"></button>
+    <button class="button" id="forward"></button>
+    <button class="button" id="play"></button>
+    <button class="button" id="pause"></button>
+    <video id="video" poster="./images/poster.jpg" controls src="./videos/lofi.mp4" width="1300"></video>
+
+<script>
+    const $video = document.querySelector('video')
+    const $play = document.querySelector('play')
+    const $pause = document.querySelector('video')
+
+    $play.addEventListener('click',handlePlay);
+
+    function handlePlay() {
+        $video.play();
+        console.log('Le diste click al botón de play')
+    }
+</script>
+
+</body>
+</html>
